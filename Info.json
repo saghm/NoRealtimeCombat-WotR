@@ -1,0 +1,11 @@
+{
+  "Id": "NoRealtimeCombat",
+  "DisplayName": "No Realtime Combat",
+  "Author": "saghm",
+  "Version": "1.0.0",
+  "UnityModManagerVersion": "0.32.4",
+  "GameVersion": "2.7.0",
+  "Requirements": [],
+  "AssemblyName": "NoRealtimeCombat.dll",
+  "EntryMethod": "NoRealtimeCombat.Main.Load"
+}
