@@ -1,0 +1,3 @@
+# NoRealtimeCombat
+
+`NoRealtimeCombat` is a mod to disable the keyboard/gamepad shortcuts for swapping between turn-based and realtime combat. The expected use of this mod is for players using the gamepad UI to avoid accidentally swapping to realtime combat, as the game does not provide a way to manually configure the gamepad shortcuts and Dpad-UP is far too important when navigating through menus to disable entirely (e.g. via Steam Input) without additional friction.
