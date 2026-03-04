@@ -5,7 +5,14 @@
     <RootNamespace>NoRealtimeCombat</RootNamespace>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-    <GameDir>$(HOME)/.local/share/Steam/steamapps/common/Pathfinder Second Adventure</GameDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Linux'))">
+    <GameDir Condition="'$(GameDir)' == ''">$(HOME)/.local/share/Steam/steamapps/common/Pathfinder Second Adventure</GameDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <GameDir Condition="'$(GameDir)' == ''">$(PROGRAMFILES(X86))\Steam\steamapps\common\Pathfinder Second Adventure</GameDir>
   </PropertyGroup>
 
   <ItemGroup>
